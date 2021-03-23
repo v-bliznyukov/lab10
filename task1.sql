@@ -50,3 +50,15 @@ VALUES (2,3,0,100,CURRENT_TIMESTAMP);
 --SELECT * FROM Credits;
 --SELECT * FROM Ledger;
 ROLLBACK;
+
+--TASK 3--
+
+CREATE TABLE Ledger (
+	ID serial PRIMARY KEY,
+	Sender INT,
+	Receiver INT,
+	Fee INT,
+	Amount INT NOT NULL, 
+	Transactiontime TIMESTAMP NOT NULL
+	
+);

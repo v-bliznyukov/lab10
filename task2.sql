@@ -1,4 +1,18 @@
 --TASK 2--
+CREATE TABLE Credits (
+	user_id INT PRIMARY KEY,
+	name VARCHAR ( 50 ) NOT NULL,
+	credit INT NOT NULL
+);
+
+INSERT INTO Credits(user_id, name, credit)
+VALUES (1,'John', 1000);
+
+INSERT INTO Credits(user_id, name, credit)
+VALUES (2,'Alex', 1000);
+
+INSERT INTO Credits(user_id, name, credit)
+VALUES (3,'Cooper', 1000);
 
 ALTER TABLE Credits
 ADD BankName VARCHAR (50);
@@ -15,8 +29,6 @@ WHERE user_id = 2;
 
 INSERT INTO Credits(user_id, name, credit)
 VALUES (4,'Cashier', 0);
-
-SELECT * FROM Credits;
 
 START TRANSACTION;
 
